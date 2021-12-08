@@ -29,7 +29,15 @@ Capitals['Rootsi'] = 'Stockholm'
 Capitals['Läti'] = 'Riga'
 Countries = ['Belgia','Leedu','Bulgaaria','Luksemburg','Tsehhi Vabariik','Ungari','Taani','Malta','Saksamaa','Madalmaad','Esti','Austria','Iirimaa','Poola','Kreeka','Portugal','Hispania','Rumeenia','Prantsustmaa','Slovakkia','Itaalia','Sooma','Küpros','Rootsi','Läti',]
 for country in Countries:
- if country in Capitals:
- print('Столица страны ' + country + ': ' + Capitals[country])
- else:
- print('В базе нет страны c названием ' + country)
+    country=input("sisesta riik: ")
+    if country in Capitals:
+        print('Riigi pealinn ' + country + ': ' + Capitals[country])
+    else:
+        print('Nimega riiki andmebaasis pole' + country)
+        print("Kas soovite riigi lisada? kui jah, sisesta 1")
+        if==1:
+            a=input("Sisesta riik")
+            b=input("Sisesta pealinn")
+            dictionary['a'] = 'b'
+        else:
+            print("viga")
