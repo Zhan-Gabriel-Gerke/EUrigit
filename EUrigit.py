@@ -28,13 +28,27 @@ Capitals['Küpros'] = 'Nikosia'
 Capitals['Rootsi'] = 'Stockholm'
 Capitals['Läti'] = 'Riga'
 Countries = ['Belgia','Leedu','Bulgaaria','Luksemburg','Tsehhi Vabariik','Ungari','Taani','Malta','Saksamaa','Madalmaad','Esti','Austria','Iirimaa','Poola','Kreeka','Portugal','Hispania','Rumeenia','Prantsustmaa','Slovakkia','Itaalia','Sooma','Küpros','Rootsi','Läti',]
+Pealinnes = ['Brüssel','Vilnius','Sofia','Luksemburg','Praha','Budapest','Kopenhaagen','Valletta','Berliin','Amsterdam','Tallinn','Viin','Dublin','Varssavi','Ateana','Lissabon','Madrid','Bukarest','Pariis','Ljubljana','Zagreb','Bratislava','Rooma','Helsingi','Nikosia','Stockholm','Riga']
 for country in Countries:
     country=input("sisesta riik: ")
     if country in Capitals:
         print('Riigi pealinn ' + country + ': ' + Capitals[country])
     else:
         print('Nimega riiki andmebaasis pole' + country)
-        if 1==input("Kas soovite riigi lisada? kui jah, sisesta 1"):
-            dictionary = {input("Sisesta riik"):input("Sisesta pealinn")}
+        c=input("Kas soovite riigi lisada? kui jah, sisesta 1 võib-olla oli kirjaviga, kui selle parandad 2 Kas soovite proovile panna oma teadmised Euroopa riikidest 3")
+        if c=="1":
+            a=input("Sisesta riik")
+            b=input("Sisesta pealinn")
+            Capitals.update({a: b})
+        elif c=="2":
+            g=input("Sisesta riik:")
+            Capitals.pop(g)
+            q=input("Sisesta riik")
+            w=input("Sisesta pealinn")
+            Capitals.update({q:w})
+        elif c=="3":
+            for x in range(10):
+                print(chose(Countries))
+
         else:
             print("viga")
