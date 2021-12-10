@@ -30,7 +30,7 @@ Capitals['Läti'] = 'Riga'
 Countries = ['Belgia','Leedu','Bulgaaria','Luksemburg','Tsehhi Vabariik','Ungari','Taani','Malta','Saksamaa','Madalmaad','Esti','Austria','Iirimaa','Poola','Kreeka','Portugal','Hispania','Rumeenia','Prantsustmaa','Slovakkia','Itaalia','Sooma','Küpros','Rootsi','Läti',]
 Pealinnes = ['Brüssel','Vilnius','Sofia','Luksemburg','Praha','Budapest','Kopenhaagen','Valletta','Berliin','Amsterdam','Tallinn','Viin','Dublin','Varssavi','Ateana','Lissabon','Madrid','Bukarest','Pariis','Ljubljana','Zagreb','Bratislava','Rooma','Helsingi','Nikosia','Stockholm','Riga']
 print("Kas soovite riigi pealinnaga tutvuda? 1 Kas soovite testida oma teadmisi Euroopa riikide kohta? 2")
-if=="1"
+if=="1":
     for country in Countries:
         country=input("sisesta riik: ")
         if country in Capitals:
