@@ -1,3 +1,4 @@
+from random import*
 Capitals=()
 Capitals=dict()
 Capitals['Belgia'] = 'Brüssel'
@@ -52,6 +53,39 @@ if g=="1":
                 print("viga")
 elif g=="2":
     for x in range(10):
-        
+        Countries.sort()
+        Countries.reverse()
+        m=0
+        for i in range(10):
+            country=str(choice(Countries))
+            print(country)
+            st=input("Sisesta peallinn: ")
+            if st==Capitals[country]:
+                print("Hea")
+                chet+=1
+            else:
+                print("Viga")
+        if chet==0:
+            print("0/10")
+        elif chet==1:
+            print("1/10")
+        elif chet==2:
+            print("2/10")
+        elif chet==3:
+            print("3/10")
+        elif chet==4:
+            print("4/10")
+        elif chet==5:
+            print("5/10")
+        elif chet==6:
+            print("6/10")
+        elif chet==7:
+            print("7/10")
+        elif chet==8:
+            print("8/10")
+        elif chet==9:
+            print("9/10")
+        elif chet==10:
+            print("10/10")  
 else:
     print("Viga")
